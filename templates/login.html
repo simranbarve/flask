@@ -1,12 +1,12 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block head %}
 LOGIN PAGE
 {% endblock %}
 
 {% block body %}
-<form>
-    <p>Enter a list seperated by a comma:</p>
-    <p><input type="text" name="lst"></p>
-    <p><input type="submit" value="submit"></p>
+<form action="#" method="post">
+    <p>Name:</p>
+    <p><input type="text" name="nums" /></p>
+    <p><input type="submit" value="submit" /></p>
 </form>
 {% endblock %}
