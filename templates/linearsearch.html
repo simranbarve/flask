@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1>Linear Search</h1>
+      <hr>
+      <p class="text-center">Linera search is a basic search algorithm that
+        iterates over the list until it finds the desired item</>
+      <form action="/linearsearch" method="POST">
+        <div class="form-group">
+          <label>List</label>
+          <input type="text" class="form-control" id="list" name="list" placeholder="1,2,3,4,5,6">
+        </div>
+        <div class="form-group">
+          <label>Search no.</label>
+          <input type="text" class="form-control" id="number" name="number" placeholder="1">
+        </div>
+      <button type="submit" class="btn btn-primary">Sort</button>
+      </form>
+    </div>
+  </div>
+</div>
+<p class="text-center">Is It There? <b>{{return_val}}</b></p>
+{% endblock %}

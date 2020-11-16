@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block head %}
-Merge Sort
 {% endblock %}
 
 {% block body %}
@@ -8,17 +7,25 @@ Merge Sort
   <div class="row">
     <div class="col">
 
-      <h1>Sign up</h1>
+      <h1>Merge sort</h1>
       <hr>
+      <p class="text-center">Merge sort spllits the array or list into mini
+        sublists and sorts those sublists. It then combines those sublists to
+        create the final sorted list.</>
       <form action="/mergeSort" method="POST">
         <div class="form-group">
           <label>List</label>
           <input type="text" class="form-control" id="list" name="list" placeholder="1,2,3,4,5,6">
         </div>
-
+        <div class="form-group">
+          <label>which way?</label>
+          <input type="text" class="form-control" id="which_way" name="which_way" placeholder="ascending">
+        </div>
       <button type="submit" class="btn btn-primary">Sort</button>
       </form>
     </div>
   </div>
 </div>
+<p class="text-center">Sorted list: <b>{{lst}}</b></p>
+<p class="text-center">time taken: <b>{{time_taken}}</b></p>
 {% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1>Binary Search</h1>
+      <hr>
+      <p class="text-center">Binary search is an efficient searhing algorithm,
+        it repeatedly divides the list until there is only one possible location</>
+      <form action="/binarysearch" method="POST">
+        <div class="form-group">
+          <label>List</label>
+          <input type="text" class="form-control" id="list" name="list" placeholder="binary">
+        </div>
+        <div class="form-group">
+          <label>Search no.</label>
+          <input type="text" class="form-control" id="number" name="number" placeholder="1">
+        </div>
+      <button type="submit" class="btn btn-primary">Sort</button>
+      </form>
+    </div>
+  </div>
+</div>
+<p class="text-center">Is It There? <b>{{return_val}}</b></p>
+{% endblock %}
